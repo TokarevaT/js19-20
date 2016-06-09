@@ -2,9 +2,7 @@
 <html>
 <head>
     <title>&#10041 Build</title>
-<!-- <link href="../css/dist/main.min.css" rel="stylesheet" />
-	<link href="../styles/style.css" rel="stylesheet" /> -->
-	<link href="../styles/main.min.css" rel="stylesheet" />
+	<link href="../styles/main.css" rel="stylesheet" />   
 </head>
 <body>
     <div class="main">
@@ -21,7 +19,7 @@
                 <ul class="menu">
                     <li><a href="#">HOME</a>
                     <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">О SERVICES</a></li>
                     <li><a href="#">NEWS</a></li>
                     <li><a href="#">SHOP</a></li>
                 </ul>
@@ -32,9 +30,14 @@
             </article>
         </header>
         <div class="middle">
-            <div>
-                <img class="picture" src="../img/main.png" alt="Search" />
-            </div>
+                <div id="slider-wrap">
+                    <div id="slider">
+                        <div class="slide"><img class="img" src="../img/016.jpg"></div>
+                        <div class="slide"><img class="img" src="../img/15.jpg"></div>
+                        <div class="slide"><img class="img" src="../img/main.png"></div>
+                        <div class="slide"><img class="img" src="../img/004.jpg"></div>
+                    </div>
+                </div>
             <div class="link_main_site">
                 <img src="../img/build.png" />
                 <div class="link_marg">
@@ -43,14 +46,6 @@
                         <br />
                         <span class="link_main_black"> YOUR <br />BUSINESS</span>
                     </a>
-                </div>
-                <div class="checkbox">
-                    <input id="male" type="checkbox" name="gender" value="male">
-                    <label for="male"></label>
-                    <input id="female" type="checkbox" name="gender" value="female">
-                    <label for="female"></label>
-                    <input id="fmale" type="checkbox" name="gender" value="fmale">
-                    <label for="fmale"></label>
                 </div>
             </div>
         </div>
@@ -115,108 +110,111 @@
             </article>
         </div>
         <div class="sidebar">
-            <div class="latest_news">
-                <h1 class="heading-primary">Latest News</h1>
-                <img class="link_provide_img" src="../img/Untitled5.png">
-                <div class="box">
-                    <a class="link_latest" href="#">Advanced Machinery Helps Improve Quality</a>
-                    <br />
-                    <div class="comments">
-                        <span>by</span>
-                        <a class="cmsmasters" href="#">cmsmasters</a>&nbsp; &nbsp; &nbsp;
-                        <a class="cms" href="#">Comments (<span class="com_num">6</span>)</a>
+            <div class="sidebar_box">
+                <div class="latest_news">
+                    <h1 class="heading-primary">Latest News</h1>
+                    <img class="link_provide_img" src="../img/Untitled5.png">
+                    <div class="box">
+                        <a class="link_latest" href="#">Advanced Machinery Helps Improve Quality</a>
+                        <br />
+                        <div class="comments">
+                            <span>by</span>
+                            <a class="cmsmasters" href="#">cmsmasters</a>&nbsp; &nbsp; &nbsp;
+                            <a class="cms" href="#">Comments (<span class="com_num">6</span>)</a>
+                        </div>
+                        <br />
+                        <div class="content">
+                            Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                            Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                            enim epsam voluptatem.
+                        </div>
                     </div>
-                    <br />
-                    <div class="content">
-                        Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                        enim epsam voluptatem.
+                </div>
+                <div class="late">
+                    <img class="link_provide_img" src="../img/Untitled6.png">
+                    <div class="box">
+                        <a class="link_latest" href="#">Powerful Techniques For Advanced Service</a>
+                        <br />
+                        <div class="comments">
+                            <span>by</span>
+                            <a class="cmsmasters" href="#">cmsmasters</a>&nbsp; &nbsp; &nbsp;
+                            <a class="cms" href="#">Comments (<span class="com_num">3</span>)</a>
+                        </div>
+                        <br />
+                        <div class="content">
+                            Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                            Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                            enim epsam voluptatem.
+                        </div>
+                    </div>
+                </div>
+                <div class="banners_place">
+                    <div class="container">
+                        <h1 class="heading-primary">Banners Place</h1>
+                        <div class="accordion">
+                            <dl>
+                                <dt>
+                                    <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+                                        ACCORDION PANEL 1
+                                    </a>
+                                </dt>
+                                <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                                    <span>
+                                        Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                                        enim epsam voluptatem. Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                                        enim epsam voluptatem.
+                                    </span>
+                                </dd>
+                                <dt>
+                                    <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+                                        ACCORDION PANEL 2
+                                    </a>
+                                </dt>
+                                <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                                    <span>
+                                        Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                                        enim epsam voluptatem. Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                                        enim epsam voluptatem.
+                                    </span>
+                                </dd>
+                                <dt>
+                                    <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                                        ACCORDION PANEL 3
+                                    </a>
+                                </dt>
+                                <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                                    <p>
+                                        Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                                        enim epsam voluptatem. Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                                        enim epsam voluptatem.
+                                    </p>
+                                </dd>
+                                <dt>
+                                    <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                                        ACCORDION PANEL 4
+                                    </a>
+                                </dt>
+                                <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                                    <p>
+                                        Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                                        enim epsam voluptatem. Cum sociis natoque penatibus et magnis dis parturient montesmus.
+                                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
+                                        enim epsam voluptatem.
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="late">
-                <img class="link_provide_img" src="../img/Untitled6.png">
-                <div class="box">
-                    <a class="link_latest" href="#">Powerful Techniques For Advanced Service</a>
-                    <br />
-                    <div class="comments">
-                        <span>by</span>
-                        <a class="cmsmasters" href="#">cmsmasters</a>&nbsp; &nbsp; &nbsp;
-                        <a class="cms" href="#">Comments (<span class="com_num">3</span>)</a>
-                    </div>
-                    <br />
-                    <div class="content">
-                        Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                        Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                        enim epsam voluptatem.
-                    </div>
-                </div>
-            </div>
-            <div class="banners_place">
-                <div class="container">
-                    <h1 class="heading-primary">Banners Place</h1>
-                    <div class="accordion">
-                        <dl>
-                            <dt>
-                                <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
-                                    ACCORDION PANEL 1
-                                </a>
-                            </dt>
-                            <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
-                                <span>
-                                    Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                                    Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                                    enim epsam voluptatem. Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                                    Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                                    enim epsam voluptatem.
-                                </span>
-                            </dd>
-                            <dt>
-                                <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
-                                    ACCORDION PANEL 2
-                                </a>
-                            </dt>
-                            <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
-                                <span>
-                                    Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                                    Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                                    enim epsam voluptatem. Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                                    Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                                    enim epsam voluptatem.
-                                </span>
-                            </dd>
-                            <dt>
-                                <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
-                                    ACCORDION PANEL 3
-                                </a>
-                            </dt>
-                            <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
-                                <p>
-                                    Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                                    Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                                    enim epsam voluptatem. Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                                    Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                                    enim epsam voluptatem.
-                                </p>
-                            </dd>
-                            <dt>
-                                <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
-                                    ACCORDION PANEL 4
-                                </a>
-                            </dt>
-                            <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
-                                <p>
-                                    Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                                    Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                                    enim epsam voluptatem. Cum sociis natoque penatibus et magnis dis parturient montesmus.
-                                    Pro vel nibh et elit mollis commodo et nec augueque Nemo enim epsam voluptatem quia ptas sit aspertatur samomo
-                                    enim epsam voluptatem.
-                                </p>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <div class="sponsors">
             <p class="sponsors_picture">
@@ -230,46 +228,49 @@
             </p>
         </div>
         <footer>
-            <div class="footer_menu">
-                <div class="footer_menu_container">
-                    <h3>SOCIALS</h3>
-                    <ul>
-                        <li class="footer_menu_li"><a href="#">Facebook</a></li>
-                        <li class="footer_menu_li"><a href="#">Flickr</a></li>
-                        <li class="footer_menu_li"><a href="#">Twitter</a></li>
-                        <li class="footer_menu_li"><a href="#">Vimeo</a></li>
-                    </ul>
-                </div>
-                <div class="menu_second_third_fourth">
-                    <div class="footer_menu_container_second">
-                        <h3>LINKS</h3>
+            <div class="foot_box">
+                <div class="footer_menu">
+                    <div class="footer_menu_container">
+                        <h3>SOCIALS</h3>
                         <ul>
-                            <li class="footer_menu_li"><a href="#">How to Write a Blog</a></li>
-                            <li class="footer_menu_li"><a href="#">Create a log in 4 Steps</a></li>
-                            <li class="footer_menu_li"><a href="#">15 Tips to Increase Traffic</a></li>
-                            <li class="footer_menu_li"><a href="#">20 Blog Posts Ideas</a></li>
+                            <li class="footer_menu_li"><a href="#">Facebook</a></li>
+                            <li class="footer_menu_li"><a href="#">Flickr</a></li>
+                            <li class="footer_menu_li"><a href="#">Twitter</a></li>
+                            <li class="footer_menu_li"><a href="#">Vimeo</a></li>
                         </ul>
                     </div>
-                    <div class="footer_menu_container_third">
-                        <h3>BLOGROLL</h3>
-                        <ul>
-                            <li class="footer_menu_li"><a href="#">Blogs Blog</a></li>
-                            <li class="footer_menu_li"><a href="#">Roll Up Roll Up</a></li>
-                            <li class="footer_menu_li"><a href="#">Blog Free</a></li>
-                            <li class="footer_menu_li"><a href="#">Wordpress Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer_menu_container_fourth">
-                        <h3>ABOUT US</h3>
-                        <ul>
-                            <li class="footer_menu_li"><a href="#">Agreeculture</a></li>
-                            <li class="footer_menu_li"><a href="#">Harvest</a></li>
-                            <li class="footer_menu_li"><a href="#">Company News</a></li>
-                            <li class="footer_menu_li"><a href="#">Investor Relations</a></li>
-                        </ul>
+                    <div class="menu_second_third_fourth">
+                        <div class="footer_menu_container_second">
+                            <h3>LINKS</h3>
+                            <ul>
+                                <li class="footer_menu_li"><a href="#">How to Write a Blog</a></li>
+                                <li class="footer_menu_li"><a href="#">Create a log in 4 Steps</a></li>
+                                <li class="footer_menu_li"><a href="#">15 Tips to Increase Traffic</a></li>
+                                <li class="footer_menu_li"><a href="#">20 Blog Posts Ideas</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_menu_container_third">
+                            <h3>BLOGROLL</h3>
+                            <ul>
+                                <li class="footer_menu_li"><a href="#">Blogs Blog</a></li>
+                                <li class="footer_menu_li"><a href="#">Roll Up Roll Up</a></li>
+                                <li class="footer_menu_li"><a href="#">Blog Free</a></li>
+                                <li class="footer_menu_li"><a href="#">Wordpress Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_menu_container_fourth">
+                            <h3>ABOUT US</h3>
+                            <ul>
+                                <li class="footer_menu_li"><a href="#">Agreeculture</a></li>
+                                <li class="footer_menu_li"><a href="#">Harvest</a></li>
+                                <li class="footer_menu_li"><a href="#">Company News</a></li>
+                                <li class="footer_menu_li"><a href="#">Investor Relations</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="contacts">
                 <article class="ff">
                     <span class="footer_span">
@@ -294,10 +295,10 @@
             </div>
         </footer>
     </div>
+    <script src="../Scripts/jquery-2.2.3.js"></script>
     <script src="../Scripts/lodash.core.min.js"></script>
     <script src="../Scripts/lodash.min.js"></script>
-   <script src="../js/dist/script.main.min.js"></script>
-   <!-- <script src="../js/JavaScript1.js"></script>
-    <script src="../js/JavaScript2.js"></script> -->
+    <script src="../js/src/JavaScript3.js"></script> 
+	<script src="../js/dist/script.main.js"></script>
 </body>
 </html>

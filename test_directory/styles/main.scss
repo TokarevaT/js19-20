@@ -77,10 +77,13 @@ $menu:                    200px;
 $grey:                    rgb(94,96,100);
 $margleft:                20px;
 $value4px:                4px;
+$importantWidth:          1075px;
+$importantMargin:         0 auto;
 
 
 
-@import 'variables';
+
+
 
 @font-face {
     font-family: 'ubunturegular';
@@ -89,11 +92,10 @@ $value4px:                4px;
     font-style: normal;
 }
 
-
 body {
   margin: 0;
     padding: 0;
-    font-family: 'ubunturegular';
+    font-family: $font-stack;
 }
 
 .tophead {
@@ -161,7 +163,7 @@ body {
     
 	
 
-	.search {
+.search {
     position:  $position;
     top: $top;
     float: $float;
@@ -183,7 +185,7 @@ input[type="text"] {
 }
 
 .middle {
-    height: 550px;
+    height: 750px;
 }
 
 .picture {
@@ -196,21 +198,10 @@ input[type="text"] {
     margin-left: $negative-margin-left;
 }
 
-.middle {
-    height: $middle-height;
-}
-
-.picture {
-    width: $maxwidth;
-    height: $middle-height;
-    overflow: $overflow;
-}
-
-
 .link_main_site {
     width: $width240;
     position: $position;
-    top: $top-minus;
+    top: -255px;
     left: $height;
 }
 
@@ -236,52 +227,20 @@ input[type="text"] {
     color: $white;
 }
 
-.checkbox {
-    position: $position;
-    left: $pxl;
+.sidebar {
+        height: 550px;
+    width: 100%;
+}
+.sidebar_box{
+      width: $importantWidth;
+    margin: $importantMargin; 
 }
 
-label {
-    display: $display-inline;
-    cursor: $cursor;
-    position: $position;
-    padding-left: $margin-bottom;
-    margin-right: $font-size12;
-}
-
-input[type=checkbox] {
-    display: none;
-}
-
-label:before {
-    content: "";
-    display: $display-inline;
-    width: $value;
-    height: $value;
-    margin-right: $value10px;
-    position: $absolute;
-    left: $value0;
-    bottom: $value1;
-    background-color: $rgba;
-    box-shadow: $inset;
-}
-
-.checkbox label:before {
-    border-radius: $border-radius;
-}
-
-.checkbox input[type=checkbox]:checked + label:before {
-    content: "\2022";
-    color: $black;
-    font-size: $width;
-    text-align: $text-align;
-    line-height: $line-height;
-}
  .sprite {
-    height: $sprite;
-    width: $maxwidth;
+        height: 300px;
+    width: $importantWidth;
     overflow: $overflow;
-    margin-left: $main;
+    margin: $importantMargin; 
 }
 
 .sprite_picture {
@@ -358,7 +317,8 @@ aside {
 }
 
 .content_box {
-    margin-left: $main;
+ width: $importantWidth;
+    margin: $importantMargin;  
 }
 
 .link_services_provide {
@@ -378,12 +338,6 @@ aside {
         color: rgb(244,182,44);
     }
 
-	.sidebar {
-    height: $middle-height;
-    width: $middle-height;
-    margin-left: $main;
-}
-
 .latest_news {
     margin-bottom: $margin-left;
 }
@@ -391,7 +345,7 @@ aside {
 .box {
     width: $ond;
     position: $position;
-    left: 33%;
+    left: 180px;
     height: $width-120;
     margin-top: -135px;
 }
@@ -454,10 +408,30 @@ h4 {
     font-family: $font-stack2;
 }
 .banners_place {
-    float: $right;
-    margin-top: $font-size;
+      width: 500px;
+    margin: $importantMargin;
+    position: $position;
+    left: 300px;
+    top: -385px;
+}
+.sponsors_picture {
+    position: $position;
+    top: 25px;
+        width: $importantWidth;
+    margin: $importantMargin;
 }
 
+.ff {
+    width: $importantWidth;
+    margin: $importantMargin;
+}
+.foot_box{
+margin: $importantMargin;
+    width: 100%;
+    height: 260px;
+    overflow: $overflow;
+    background-color: rgb(42,45,65);
+}
 .heading-primary {
     font-size: $height25;
 }
@@ -492,16 +466,13 @@ h3 {
         }
 
 .footer_menu {
-    width: $maxwidth;
-    height: 260px;
-    overflow: $overflow;
-    background-color: $background-color;
+        margin: 0 auto;
+    width: 1075px;
 }
-
+   
 .footer_menu_container {
-    width: $menu;
-    padding: $margin;
-    margin-left: $square;
+    width: 200px;
+    padding: 15px;
 }
 
 .footer_menu_container_second {
@@ -518,7 +489,7 @@ h3 {
     display: -webkit-inline-box;
     position: $position;
     top: -234px;
-    left: 400px;
+    left: 260px;
 }
 .contacts {
     height: $height;
@@ -557,16 +528,6 @@ h3 {
     top: $value4px;
 }
 
-.sponsors_picture {
-    position: $position;
-    top: $height25;
-    margin-left: $main;
-}
-
-.ff {
-    margin-left: 180px;
-}
-
 .accordion dl,
 .accordion-list {
     border: 1px solid #ddd;
@@ -592,12 +553,6 @@ h3 {
 .accordion {
     position: #position;
     background-color: #eee;
-}
-
-.container {
-    position: $position;
-    top: -417px;
-    left: 470px;
 }
 
 .accordionTitle,
@@ -684,3 +639,78 @@ h3 {
         transform: scale(0.9) rotateX(-60deg);
     }
 }
+
+#slider-wrap { /* Оболочка слайдера и кнопок */
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 720px;
+}
+
+#slider { /* Оболочка слайдера */
+    width: 99%;
+    height: 720px;
+    overflow: hidden;
+    border: #eee solid 10px;
+    position: relative;
+}
+
+.slide { /* Слайд */
+    width: 100%;
+    height: 100%;
+}
+
+.sli-links { /* Кнопки смены слайдов */
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+
+    .sli-links .control-slide {
+        margin: 2px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        text-indent: -9999px;
+        background: url(../img/radioBg.png) center bottom no-repeat;
+    }
+
+        .sli-links .control-slide:hover {
+            cursor: pointer;
+            background-position: center center;
+        }
+
+        .sli-links .control-slide.active {
+            background-position: center top;
+        }
+
+#prewbutton, #nextbutton { /* Ссылка "Следующий" и "Педыдущий" */
+    display: block;
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    text-indent: -999px;
+    background: url(../img/arrowBg.png) left center no-repeat;
+    opacity: 0.8;
+    z-index: 3;
+    outline: none !important;
+}
+
+#prewbutton {
+    left: 10px;
+}
+
+#nextbutton {
+    right: 10px;
+    background: url(../img/arrowBg.png) right center no-repeat;
+}
+
+    #prewbutton:hover, #nextbutton:hover {
+        opacity: 1;
+    }
+

@@ -1,0 +1,114 @@
+﻿.accordion dl,
+.accordion-list {
+    border: 1px solid #ddd;
+}
+
+    .accordion dl,
+    .accordion-list:after {
+        content: "";
+        display: block;
+        height: 1em;
+        width: 450px;
+        background-color: green;
+    }
+
+.accordion dd,
+.accordion__panel {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    color: rgb(138,138,138);
+}
+
+.accordion {
+    position: relative;
+    background-color: #eee;
+    width: 10px;
+}
+
+.accordionTitle,
+.accordion__Heading {
+    background-color: #38cc70;
+    text-align: center;
+    font-weight: 900;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out;
+    border: 1px solid grey;
+}
+
+    .accordionTitle,
+    .accordion__Heading:before {
+        content: "+";
+        font-size: 12px;
+        line-height: 0.5;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .accordionTitle,
+    .accordion__Heading:hover {
+        background-color: #DCDCDC;
+        color: black;
+    }
+
+        .accordionTitleActive,
+        .accordionTitle.is-expanded {
+            background-color: rgb(244,182,13);
+            color: white;
+        }
+
+            .accordionTitleActive,
+            .accordionTitle.is-expanded:before {
+                transform: rotate(-225deg);
+            }
+
+.accordionItem {
+    height: auto;
+    overflow: hidden;
+    max-height: 130px;
+    transition: max-height 1s;
+}
+
+    .accordionItem.is-collapsed {
+        max-height: 0;
+        margin-bottom: 5px;
+    }
+
+.no-js .accordionItem.is-collapsed {
+    max-height: 100%;
+}
+
+.animateIn {
+    animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+    animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@keyframes accordionIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+        transform-origin: 50% 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes accordionOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.9) rotateX(-60deg);
+    }
+}
