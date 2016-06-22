@@ -55,7 +55,8 @@ body {
 
 .menu li a:hover {
   background-color: #248cec;
-  padding: 18px; }
+  padding: 18px;
+    color: rgb(244,182,13);  }
 
 .menu li span:last-child:hover {
   background-color: #2a2d41; }
@@ -467,11 +468,12 @@ h3 {
 
 #slider {
   /* ╨₧╨▒╨╛╨╗╨╛╤ç╨║╨░ ╤ü╨╗╨░╨╣╨┤╨╡╤Ç╨░ */
-  width: 99%;
-  height: 720px;
-  overflow: hidden;
-  border: #eee solid 10px;
-  position: relative; }
+      width: 95%;
+    height: 700px;
+    overflow: hidden;
+    border: #eee solid 10px;
+    position: relative;
+    margin: 0 auto; }
 
 .slide {
   /* ╨í╨╗╨░╨╣╨┤ */
