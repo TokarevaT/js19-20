@@ -281,12 +281,13 @@ h4 {
   width: 1075px;
   margin: 0 auto; }
 
-.foot_box {
-  margin: 0 auto;
-  width: 100%;
-  height: 260px;
-  overflow: hidden;
-  background-color: #2a2d41; }
+.footer_box{
+margin: 0 auto;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background-color: rgb(42,45,65);
+}
 
 .heading-primary {
   font-size: 25px; }
@@ -301,18 +302,18 @@ h3 {
   color: white;
   margin-left: 40px; }
 
-.footer_menu_li {
+.footer_menu_container_li {
   border-bottom: 1px solid rgba(94, 96, 100, 0.5);
   margin-bottom: 10px;
   list-style: none;
   padding-bottom: 10px; }
 
-.footer_menu_li a {
+.footer_menu_container_li a {
   text-decoration: none;
   color: #5e6064;
   font-size: 13px; }
 
-.footer_menu_li a:hover {
+.footer_menu_container_li a:hover {
   color: #248cec; }
 
 .footer_menu {
